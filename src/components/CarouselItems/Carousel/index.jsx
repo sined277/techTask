@@ -42,7 +42,7 @@ const ArrowPrev = ({onClickHandler, label}) => {
                 left: "100px",
             }}
         >
-            <img src="/images/carousel/ArrowLeft.svg" alt="Arrow Left" />
+            <img src="../../../src/images/carousel/ArrowLeft.svg" alt="Arrow Left" />
         </button>
     );
 };
