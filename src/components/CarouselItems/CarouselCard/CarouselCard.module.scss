@@ -1,0 +1,107 @@
+.carousel__container {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgb(0, 0, 0)),
+    url("/images/carouselCard/carouselImage.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.carousel__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel {
+  &__left {
+    text-align: left;
+    padding: 100px 200px;
+
+    &__title {
+      color: rgb(255, 255, 255);
+      font-family: "Inter";
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 77px;
+
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1600px) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+
+    &__subtitle {
+      color: rgb(255, 255, 255);
+      font-family: Inter;
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 77px;
+
+      margin-top: 46px;
+
+      @media (max-width: 1600px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @media (max-width: 1600px) {
+        font-size: 30px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  &__right {
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+      color: rgb(255, 255, 255);
+      font-family: "Inter";
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 48px;
+      letter-spacing: 0px;
+      text-align: right;
+
+      backdrop-filter: blur(30px);
+      background: rgba(255, 255, 255, 0.3);
+      padding: 15px 10px 15px 10px;
+
+      @media (max-width: 1600px) {
+        font-size: 30px;
+        line-height: 20px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 24px;
+        line-height: 20px;
+      }
+    }
+
+    &__subtitle {
+      color: rgb(255, 255, 255);
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: right;
+
+      margin-top: 20px;
+
+      @media (max-width: 1600px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
